@@ -1,2 +1,2 @@
 # Pawn-Scripting-San-Andreas-Multiplayer-
-Neki sistemi, skripte, fileskripte vezane za samp server, radjene u Pawn jeziku. Cisto zajebnacija a moze nekome i koristit
+Neki sistemi, skripte, fileskripte vezane za samp server, radjene u Pawn jeziku. Cisto zezancija, a moze nekome i koristiti.
