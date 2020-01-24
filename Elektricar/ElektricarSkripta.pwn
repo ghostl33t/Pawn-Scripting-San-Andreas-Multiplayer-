@@ -15,7 +15,6 @@ new PlayerText:ELEKTD8[MAX_PLAYERS];
 new PlayerText:ELEKTD9[MAX_PLAYERS];
 /* KLIKNUTA BOJA */
 new kliknuta_boja[MAX_PLAYERS];
-new sljedeca_boja[MAX_PLAYERS];
 new uspjesno_kliknuto[MAX_PLAYERS];
 main()
 {
