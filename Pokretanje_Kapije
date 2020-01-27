@@ -1,0 +1,36 @@
+#include <a_samp>
+#include <zcmd>
+/* SLIKE KAKO TO SVE IZGLEDA INGAME SU TU:  https://imgur.com/a/hEGVstW*/
+
+new Kapija; // varijabla u koju je smjestena kapija
+main()
+{
+	print("\n----------------------------------");
+	print(" Blank Gamemode by your name here");
+	print("----------------------------------\n");
+}
+
+
+public OnGameModeInit()
+{
+	// Don't use these lines if it's a filterscript
+	SetGameModeText("Blank Script");
+	AddPlayerClass(0, 1958.3783, 1343.1572, 15.3746, 269.1425, 0, 0, 0, 0, 0, 0);
+	//KAPIJA ODAKLE POCINJE I PRIDRUZIVANJE Varijabli "Kapija" OBJEKTA
+	Kapija = CreateObject(19870, 2046.74573, 1340.42346, 11.74830,   0.00000, 0.00000, 91.00000);
+	return 1;
+}
+// NEBITNO OVO JE CISTO ZA SPAWN MJESTO, NIJE BITNO ZA KAPIJU I POMJERANJE UOPSTE
+public OnPlayerRequestClass(playerid, classid)
+{
+	SetPlayerPos(playerid, 1958.3783, 1343.1572, 15.3746);
+	SetPlayerCameraPos(playerid, 1958.3783, 1343.1572, 15.3746);
+	SetPlayerCameraLookAt(playerid, 1958.3783, 1343.1572, 15.3746);
+	return 1;
+}
+//POMJERI KAPIJU SA KOMANDOM /start
+CMD:start(playerid, params[])
+{
+	MoveObject(Kapija, 2046.79553, 1335.68970, 11.74830, 3.0);
+	return 1;
+}
